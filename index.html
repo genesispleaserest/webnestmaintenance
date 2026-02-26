@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebNest | Maintenance</title>
+    <meta
+      name="description"
+      content="WebNest is currently under maintenance while we prepare the new website."
+    />
+    <style>
+      :root {
+        --bg: #07121d;
+        --card: #0d1b2a;
+        --line: #1f3d5b;
+        --text: #eef5ff;
+        --muted: #9fb5cd;
+        --accent: #1fb6ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 700px at 10% -10%, #12304d 0%, transparent 65%),
+          radial-gradient(1000px 600px at 100% 100%, #0c2a45 0%, transparent 60%),
+          var(--bg);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      main {
+        width: min(720px, 100%);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.04) 0%,
+          rgba(255, 255, 255, 0.01) 100%
+        );
+        padding: 40px 28px;
+        text-align: center;
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35);
+      }
+
+      .pill {
+        display: inline-block;
+        margin-bottom: 18px;
+        border: 1px solid rgba(31, 182, 255, 0.5);
+        color: var(--accent);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(28px, 6vw, 44px);
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: clamp(15px, 2.6vw, 18px);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="pill">Under Maintenance</span>
+      <h1>We are building something better</h1>
+      <p>
+        WebNest is temporarily unavailable while we launch the new website.
+        Please check back shortly.
+      </p>
+    </main>
+  </body>
+</html>
